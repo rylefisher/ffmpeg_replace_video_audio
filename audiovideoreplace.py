@@ -24,7 +24,7 @@ def select_video():
     try:
         # extract audio to WAV
         subprocess.run(
-            ["ffmpeg", "-i", video_path, "-vn", "-acodec", "pcm_s16le", audio_path_wav],
+            ["ffmpeg", "-i", video_path, "-vn", "-acodec", "pcm_s16le", audio_path_wav, '-y'],
             check=True,
         )
 
