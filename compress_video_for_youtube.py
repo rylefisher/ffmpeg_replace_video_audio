@@ -189,7 +189,7 @@ class VideoConverterApp:
 			# Audio encoding settings
 			# aac: target codec
 			# b:a 192k: good stereo quality
-			ffmpeg_cmd.extend(["-c:a", "aac", "-b:a", "192k"])
+			ffmpeg_cmd.extend(["-c:a", "aac", "-b:a", "256k"])
 
 			# Pixel format for compatibility
 			ffmpeg_cmd.extend(["-pix_fmt", "yuv420p"])
